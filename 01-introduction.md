@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Chapter 1: Confessions of a React Developer
 
 ## The Five Stages of React Grief

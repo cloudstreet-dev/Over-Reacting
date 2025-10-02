@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Chapter 9: Vanilla Web Standards - The Framework Was Inside You All Along
 
 ## What If You Don't Need Any Framework?

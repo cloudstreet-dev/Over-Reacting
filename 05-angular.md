@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Chapter 5: Angular - The Framework With Opinions (And a Therapist)
 
 ## In Defense of Opinions

@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Chapter 11: The Great Escape - Practical Migration Strategies
 
 ## You Can't Rewrite Everything Tomorrow (And Keep Your Job)

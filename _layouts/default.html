@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="main-nav">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+        <span class="nav-subtitle">{{ site.subtitle }}</span>
+      </div>
+      <div class="nav-links">
+        <a href="{{ site.baseurl }}/00-table-of-contents">Contents</a>
+        <a href="https://github.com/cloudstreet-dev/Over-Reacting" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="content">
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
+
+  {% if page.url contains '01-introduction' or page.url contains '02-vue' or page.url contains '03-svelte' or page.url contains '04-solid' or page.url contains '05-angular' or page.url contains '06-alpine' or page.url contains '07-lit' or page.url contains '08-htmx' or page.url contains '09-vanilla' or page.url contains '10-astro' or page.url contains '11-migration' or page.url contains '12-conclusion' %}
+  <nav class="chapter-nav">
+    <div class="container">
+      {% assign chapters = site.chapters | sort: 'file' %}
+      {% for chapter in chapters %}
+        {% if page.url contains chapter.file %}
+          {% unless forloop.first %}
+            {% assign prev_chapter = chapters[forloop.index0 | minus: 1] %}
+            <a href="{{ site.baseurl }}/{{ prev_chapter.file }}" class="nav-prev">← Previous: {{ prev_chapter.title }}</a>
+          {% endunless %}
+          {% unless forloop.last %}
+            {% assign next_chapter = chapters[forloop.index0 | plus: 1] %}
+            <a href="{{ site.baseurl }}/{{ next_chapter.file }}" class="nav-next">Next: {{ next_chapter.title }} →</a>
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </nav>
+  {% endif %}
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>
+        <strong>{{ site.title }}</strong> by {{ site.author }}<br>
+        A recovery guide for React developers exploring better alternatives
+      </p>
+      <p class="footer-links">
+        <a href="{{ site.baseurl }}/">Home</a> •
+        <a href="{{ site.baseurl }}/00-table-of-contents">Table of Contents</a> •
+        <a href="https://github.com/cloudstreet-dev/Over-Reacting">GitHub</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Chapter 8: HTMX - The Intervention You Didn't Know You Needed
 
 ## What If Most of Your JavaScript Was a Mistake?

@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Over-Reacting: A Recovery Guide for React Developers
 
 ## Table of Contents

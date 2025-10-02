@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Chapter 10: Astro - Content Sites Don't Need Virtual DOMs
 
 ## Ship Zero JavaScript (By Default)

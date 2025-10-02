@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Chapter 6: Alpine.js - When You Just Need to Sprinkle Some Magic
 
 ## jQuery's Cool Nephew Who Went to College

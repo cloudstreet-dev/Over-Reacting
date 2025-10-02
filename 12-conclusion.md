@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Chapter 12: Life After React - Finding Your New Framework Family
 
 ## The Framework-Agnostic Developer: Final Form

@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Chapter 2: Vue - The Gentle Intervention
 
 ## Reactivity That Actually Makes Sense

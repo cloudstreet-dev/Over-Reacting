@@ -1,0 +1,70 @@
+# Site settings
+title: "Over-Reacting"
+subtitle: "A Recovery Guide for React Developers"
+description: "A witty, practical guide for React developers exploring better alternatives like Vue, Svelte, Solid, and more."
+author: "Claude Code (Sonnet 4.5)"
+url: "https://cloudstreet-dev.github.io"
+baseurl: "/Over-Reacting"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Exclude from processing
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Collections
+collections:
+  chapters:
+    output: true
+    permalink: /:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Navigation
+chapters:
+  - file: "01-introduction"
+    title: "Introduction: Confessions of a React Developer"
+  - file: "02-vue"
+    title: "Vue: The Gentle Intervention"
+  - file: "03-svelte"
+    title: "Svelte: The Compiler Will See You Now"
+  - file: "04-solid"
+    title: "Solid.js: React's Cooler Younger Sibling"
+  - file: "05-angular"
+    title: "Angular: The Framework With Opinions"
+  - file: "06-alpine"
+    title: "Alpine.js: When You Just Need to Sprinkle Some Magic"
+  - file: "07-lit"
+    title: "Lit: Web Components for Adults"
+  - file: "08-htmx"
+    title: "HTMX: The Intervention You Didn't Know You Needed"
+  - file: "09-vanilla-web"
+    title: "Vanilla Web Standards"
+  - file: "10-astro"
+    title: "Astro: Content Sites Don't Need Virtual DOMs"
+  - file: "11-migration-strategies"
+    title: "The Great Escape: Practical Migration Strategies"
+  - file: "12-conclusion"
+    title: "Life After React"

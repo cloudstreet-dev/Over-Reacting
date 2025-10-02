@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Chapter 4: Solid.js - React's Cooler Younger Sibling
 
 ## JSX Without the Baggage

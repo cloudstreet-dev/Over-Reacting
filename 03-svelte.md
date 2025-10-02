@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Chapter 3: Svelte - The Compiler Will See You Now
 
 ## What If Your Framework Just... Disappeared?

@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Chapter 7: Lit - Web Components for Adults
 
 ## Standards-Based and Future-Proof
